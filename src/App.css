@@ -1,0 +1,169 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(./images/golden\ gate\ bride.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.forecast-container {
+  width: 65%;
+  height: 75vh;
+  margin: auto;
+  margin-top: 80px;
+  display: flex;
+   
+
+}
+
+.left-forecast{
+  width: 65%;
+  height: 100%;
+  background-image: url(./images/thunder\ pic.jpg);
+  background-size: cover;
+  background-attachment: flex;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.right-forecast{
+  width: 35%;
+  height: 100%;
+  background-color:  rgba(16, 15, 15, 0.872);
+  text-align: center;
+}
+
+
+.location-container{
+  color: white;
+  text-align: right;
+  padding-right: 25px;
+  padding-top: 25px;
+}
+
+.date-container {
+  color: white;
+}
+
+.temp-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.temp{
+  font: 90px;
+  color: white;
+}
+
+.weather-icon {
+  padding: 20px;
+  filter: invert(100%) ;
+}
+
+.day-status {
+  color: white;
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.search-container input{
+  width: 70%;
+  height: 30px;
+  padding-left:  15px;
+  border: none;
+}
+
+.search-container button{
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  border: none;
+
+}
+
+.search-container button img{
+  filter: invert(100%);
+  
+
+}
+
+.search-container{
+  display: flex;
+  justify-content: center;
+}
+
+.weather-description{
+  color: white;
+
+}
+
+.weather-details{
+  display: flex;
+  color: white;
+  justify-content: space-around;
+}
+
+hr{
+  width: 80%;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  
+}
+
+@media screen and (max-width: 1000px){
+  .weather-details h3 {
+    font-size: 15px;
+  }
+
+  .date-container h1, h3 {
+    font-size: 20px;
+  }
+
+  .temp{
+    font-size: 40px;
+  }
+
+  .forecast-container{
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 600px){
+.forecast-container{
+  width: 85%;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.left-forecast, .right-forecast{
+  width: 100%;
+}
+
+.right-forecast{
+  height: auto;
+}
+
+.weather-details{
+  padding: 20px;
+}
+
+
+.icon-containter{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  height: 40px;
+}
+
+}
+
+ 
