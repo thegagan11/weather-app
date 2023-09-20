@@ -28,7 +28,7 @@ export default function Forecast() {
 
     if (city !== "" ){
       
-    var response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=ca8c2c7970a09dc296d9b3cfc4d06940`);
+    var response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=ca8c2c7970a09dc296d9b3cfc4d06940`);
     console.log(response.status)
 
 
